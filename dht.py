@@ -4,7 +4,6 @@ from pyA20.gpio import port
 
 
 class DHT22Result:
-    'DHT22 sensor result returned by DHT22.read() method'
 
     ERR_NO_ERROR = 0
     ERR_MISSING_DATA = 1
@@ -23,7 +22,6 @@ class DHT22Result:
         return self.error_code == DHT22Result.ERR_NO_ERROR
 
 class DHT11Result:
-    'DHT11 sensor result returned by DHT11.read() method'
 
     ERR_NO_ERROR = 0
     ERR_MISSING_DATA = 1
@@ -44,7 +42,6 @@ class DHT11Result:
 
 
 class DHT22:
-    'DHT22 sensor reader class for Orange Pi'
 
     __pin = 0
 
@@ -224,7 +221,6 @@ class DHT22:
 
 
 class DHT11:
-    'DHT11 sensor reader class for Orange Pi'
 
     __pin = 0
 
